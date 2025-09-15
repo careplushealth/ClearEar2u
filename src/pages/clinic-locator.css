@@ -1,0 +1,213 @@
+/* Root container */
+.clinic-locator {
+  --bg: #f2f7fc;
+  --ink: #0d1b2a;
+  --muted: #5c6b7a;
+  --primary: #7ebf41; /* blue */
+  --primary-ink: #ffffff;
+  --surface: #ffffff;
+  --border: #dbe3ec;
+  --accent: #1f7443; /* dark navy for header */
+
+  background: var(--bg);
+  padding: 16px;
+}
+
+/* Two-column grid */
+.clinic-locator__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left list column */
+.clinic-locator__list {
+  background: var(--surface);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+  overflow: hidden;
+}
+
+/* Sticky header (search + counter) */
+.clinic-locator__sticky {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.clinic-locator__searchbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+.clinic-locator__input {
+  flex: 1;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 16px;
+}
+.clinic-locator__input:focus {
+  outline: 3px solid rgba(11,95,255,0.25);
+  border-color: var(--primary);
+}
+
+.clinic-locator__searchbtn {
+  height: 44px;
+  width: 44px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  cursor: pointer;
+}
+.clinic-locator__searchbtn:hover {
+  background: #f6f9ff;
+}
+
+.clinic-locator__counter {
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 16px;
+  font-weight: 600;
+  display: flex;
+  gap: 8px;
+}
+.clinic-locator__counter-label { opacity: 0.9; }
+.clinic-locator__counter-value { font-weight: 800; }
+
+/* Cards container */
+.clinic-locator__cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  max-height: 60vh; /* give space to scroll on desktop */
+}
+
+/* Individual card */
+.clinic-card {
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+.clinic-card:hover { background: #f8fbff; }
+.clinic-card:focus { outline: 3px solid rgba(11,95,255,0.25); }
+
+.clinic-card--active {
+  background: #eef5ff;
+  box-shadow: inset 0 0 0 2px var(--primary);
+}
+
+.clinic-card__title {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: var(--ink);
+}
+
+.clinic-card__row {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.clinic-card__pin { font-size: 18px; line-height: 1.2; }
+
+.clinic-card__address { font-style: normal; }
+
+.clinic-card__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid var(--border);
+}
+.btn:focus { outline: 3px solid rgba(11,95,255,0.25); }
+
+.btn--primary {
+  background: var(--primary);
+  color: var(--primary-ink);
+  border-color: var(--primary);
+}
+.btn--primary:hover { filter: brightness(0.95); }
+
+.btn--secondary {
+  background: #f3f6fb;
+  color: var(--ink);
+}
+
+/* Map column */
+.clinic-locator__map {
+  background: var(--surface);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.clinic-locator__map-el {
+  width: 100%;
+  height: 520px;
+}
+
+/* Active marker subtle scale */
+.leaflet-marker-icon.marker--active {
+  transform: scale(1.12);
+  transform-origin: bottom center;
+}
+
+/* Screen-reader utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Responsive layouts */
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .clinic-locator__grid {
+    grid-template-columns: 45% 55%;
+  }
+  .clinic-locator__cards { max-height: 64vh; }
+  .clinic-locator__map-el { height: 520px; }
+  .clinic-locator { padding: 16px; }
+}
+
+@media (min-width: 1024px) {
+  .clinic-locator__grid {
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+  }
+  .clinic-locator {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .clinic-locator__grid { grid-template-columns: 1fr; }
+  .clinic-locator__map-el { height: 360px; }
+  .clinic-locator__cards { max-height: none; }
+}

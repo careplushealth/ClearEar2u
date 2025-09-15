@@ -1,0 +1,580 @@
+/* Main Banner Section */
+.locksmith-banner {
+  display: flex;
+  width: 100%;
+  min-height: 90vh;
+  box-sizing: border-box;
+}
+
+/* Left side (content) */
+.banner-left {
+  flex: 1;
+  background-color: #333; /* dark grey */
+  color: white;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.banner-left h1 {
+  font-size: 4.8rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.banner-left p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.call-btn {
+  background-color: #7ebf41;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.call-btn:hover {
+  background-color: #e6b747;
+}
+
+/* Right side (image) */
+.banner-right {
+  flex: 1;
+}
+
+.banner-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .locksmith-banner {
+    flex-direction: column;
+    min-height: 50vh;
+  }
+
+  .banner-left,
+  .banner-right {
+    flex: none;
+    width: 100%; /* FIX: changed from 100vw */
+  }
+
+  .banner-left {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .banner-left h1 {
+    font-size: 2rem;
+  }
+
+  .banner-left p {
+    font-size: 1rem;
+  }
+
+  .call-btn {
+    padding: 12px 22px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Specializations */
+.specializations-section {
+  width: 100%; /* FIX: changed from 98vw */
+  background: linear-gradient(135deg, #1f7443, #7ebf41);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  box-sizing: border-box;
+}
+
+.specializations-header h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.specializations-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: #f9f7f3;
+  color: #2c4a54;
+  border: 1px solid #dcdcdc;
+  width: 100%; /* FIX */
+  box-sizing: border-box;
+}
+
+.specialization-card {
+  padding: 2rem 1rem;
+  border-right: 1px solid #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.specialization-card:last-child {
+  border-right: none;
+}
+
+.specialization-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f26621;
+}
+
+.specialization-card p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .specializations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .specialization-card {
+    border-right: none;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  .specialization-card:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .specializations-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Hero Section */
+.locksmith-hero {
+  display: flex;
+  width: 100%;
+  min-height: 400px;
+  background-color: #333;
+  box-sizing: border-box;
+}
+
+.locksmith-left {
+  flex: 1;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  box-sizing: border-box;
+}
+
+.locksmith-subtitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.locksmith-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.locksmith-btn {
+  background-color: white;
+  color: black;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.locksmith-btn:hover {
+  background-color: #000;
+}
+
+.locksmith-right {
+  flex: 1;
+}
+
+.locksmith-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .locksmith-hero {
+    flex-direction: column;
+  }
+
+  .locksmith-left {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .locksmith-title {
+    font-size: 1.8rem;
+  }
+
+  .locksmith-btn {
+    margin: 0 auto;
+  }
+
+  .locksmith-right img {
+    height: 250px;
+  }
+}
+
+
+
+/* Map Section */
+.map-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+  background: #f9fafb;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+}
+
+.map-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 0px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  width: 320px;
+  max-width: 100%; /* FIX */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.map-box h3 {
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .map-section {
+    gap: 20px;
+  }
+  .map-box {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .map-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .map-box {
+    width: 90%;
+  }
+}
+
+/* Pricing */
+.pricing-heading {
+  text-align: center;
+  margin: 20px 0;
+  padding-top: 40px;
+}
+
+.pricing-heading h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: radial-gradient(circle, #1f7443, #7ebf41);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 140px;
+  box-sizing: border-box;
+}
+
+.pricing-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 30px 20px;
+  width: 280px;
+  text-align: left;
+  position: relative;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.highlighted {
+  border: 2px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(90deg, #1f7443, #7ebf41) border-box;
+}
+
+.badge {
+  background: #f5f0ff;
+  color: #7ebf41;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 20px;
+  position: absolute;
+  top: -12px;
+  left: 20px;
+}
+
+.plan-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.plan-subtitle {
+  font-size: 0.95rem;
+  color: #6a6a7b;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.plan-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.sub {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #777;
+}
+
+.plan-button {
+  display: inline-block;
+  background: #f0f0ff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.plan-button:hover {
+  background: #e0e0ff;
+}
+
+.features h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.features li {
+  margin-bottom: 8px;
+}
+
+.new {
+  color: #ff00cc;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .pricing-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .pricing-card {
+    width: 100%;
+  }
+  .pricing-container {
+    gap: 30px;
+  }
+}
+
+/* ---------- Extra Small Screens (≤480px) ---------- */
+@media (max-width: 480px) {
+  /* Banner Section */
+  .banner-left {
+    padding: 20px 15px;
+  }
+  .banner-left h1 {
+    font-size: 1.8rem;
+  }
+  .banner-left p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+  .call-btn {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .banner-right img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+
+
+  /* Specializations */
+  .specializations-header h2 {
+    font-size: 1.5rem;
+  }
+  .specialization-card {
+    padding: 1.5rem 1rem;
+    border-right: none; /* FIX */
+  }
+  .specialization-card p {
+    font-size: 0.9rem;
+  }
+
+  /* Map Section */
+  .map-section {
+    padding: 30px 10px;
+    gap: 15px;
+  }
+  .map-box {
+    width: 100%;
+  }
+
+  /* Pricing Section */
+  .pricing-heading h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  .pricing-card {
+    padding: 20px 15px;
+  }
+  .plan-title {
+    font-size: 1.2rem;
+  }
+  .plan-subtitle {
+    font-size: 0.85rem;
+  }
+  .plan-price {
+    font-size: 1.2rem;
+  }
+  .plan-button {
+    width: 100%;
+  }
+  .features ul {
+    font-size: 0.85rem;
+  }
+
+  /* Locksmith Hero */
+  .locksmith-left {
+    padding: 2rem 1rem;
+  }
+  .locksmith-title {
+    font-size: 1.5rem;
+  }
+  .locksmith-btn {
+    width: 100%;
+    max-width: 240px;
+    margin: 15px auto 0;
+  }
+  .locksmith-right img {
+    height: auto;
+    max-height: 200px;
+  }
+}
+
+
+
+.rich-text-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.rich-text-left h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #111;
+  margin: 0;
+}
+
+.rich-text-left .highlight {
+  background: linear-gradient(90deg, #1f7443, #7ebf41);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.rich-text-right p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin: 0;
+  max-width: 550px;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .rich-text-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rich-text-left h2 {
+    font-size: 2.2rem;
+  }
+
+  .rich-text-right p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+}

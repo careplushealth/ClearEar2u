@@ -1,0 +1,351 @@
+/* ---------------- Landing Section ---------------- */
+.landing-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #ffffff;
+  flex-wrap: wrap;
+}
+
+.landing-text {
+  flex: 1;
+  width: 50%;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.subheading {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  color: #3c3c3c;
+}
+
+.landing-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+.cta-btn {
+  background: #7ebf41;
+  border: none;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: #fff;
+}
+.cta-btn:hover {
+  background: #7ebf41;
+}
+
+.landing-image {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.landing-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .landing-text h1 {
+    font-size: 36px;
+  }
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .landing-text,
+  .landing-image {
+    width: 100%;
+    padding: 20px;
+  }
+  .landing-text h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-text {
+    padding: 15px;
+  }
+  .landing-text h1 {
+    font-size: 26px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .cta-btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+
+/* ---------------- Gourmet Section ---------------- */
+.gourmet-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #000;
+}
+
+.gourmet-title {
+  font-size: 78px;
+  line-height: 1.2;
+  font-weight: 800; /* fixed: use 700–900 for boldness */
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+
+  /* gradient text */
+  background: linear-gradient(90deg, #1f7443, #7ebf41);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+.gourmet-subtitle {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.gourmet-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.gourmet-description {
+  margin: 25px 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.gourmet-footer {
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gourmet-section {
+    padding: 40px 15px;
+  }
+  .gourmet-title {
+    font-size: 28px;
+  }
+  .gourmet-subtitle {
+    font-size: 15px;
+  }
+  .gourmet-content p,
+  .gourmet-description,
+  .gourmet-footer {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .gourmet-section {
+    padding: 30px 10px;
+  }
+  .gourmet-title {
+    font-size: 22px;
+  }
+  .gourmet-subtitle {
+    font-size: 13px;
+  }
+  .gourmet-content p,
+  .gourmet-description,
+  .gourmet-footer {
+    font-size: 13px;
+  }
+}
+
+
+/* ---------------- Clinic Locator ---------------- */
+.clinics-section {
+  background: #e6f3fc;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #002147;
+}
+
+.clinics-header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+.clinics-header h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.clinics-header p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.clinics-container {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.clinics-list {
+  flex: 1;
+  padding: 20px;
+  max-width: 400px;
+}
+.search-box {
+  margin-bottom: 20px;
+}
+.search-box label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.search-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+.search-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.search-input .search-btn {
+  background: #1f7443;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+.clinic-count {
+  background: #002147;
+  color: #fff;
+  padding: 10px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.clinic-item {
+  margin-bottom: 20px;
+}
+.clinic-item h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.clinic-item p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.location-icon {
+  margin-right: 4px;
+}
+.clinic-actions {
+  display: flex;
+  gap: 10px;
+}
+.btn-outline {
+  border: 2px solid #002147;
+  background: #fff;
+  color: #002147;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-primary {
+  border: none;
+  background: #1f7443;
+  color: #fff;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.clinics-map {
+  flex: 2;
+  min-height: 500px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .clinics-container {
+    flex-direction: column;
+  }
+  .clinics-list {
+    max-width: 100%;
+  }
+  .clinics-map {
+    height: 400px;
+  }
+}
+@media (max-width: 600px) {
+  .clinics-section {
+    padding: 40px 15px;
+  }
+  .clinics-header h2 {
+    font-size: 24px;
+  }
+  .clinics-header p {
+    font-size: 14px;
+  }
+  .clinic-item h3 {
+    font-size: 16px;
+  }
+  .clinic-item p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  .clinics-section {
+    padding: 30px 12px;
+  }
+  .clinics-header h2 {
+    font-size: 20px;
+  }
+  .clinics-map {
+    min-height: 300px;
+  }
+}
