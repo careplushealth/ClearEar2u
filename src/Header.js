@@ -21,10 +21,11 @@ function Header() {
         <nav className="desktop-nav">
           <ul>
             <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
            <li>
   <a href="#pricing">Pricing</a>
 </li>
-            <li><Link to="/about">About</Link></li>
+            
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
@@ -47,8 +48,8 @@ function Header() {
         <button className="close-btn" onClick={() => setMenuOpen(false)}>×</button>
         <ul>
           <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-         <li> <a href="#pricing" onClick={() => setMenuOpen(false)}>Pricing</a></li>
           <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
+          <li><a href="#pricing" onClick={() => setMenuOpen(false)}>Pricing</a></li>
           <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
         </ul>
         <div className="appointment-btn">

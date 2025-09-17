@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
@@ -10,57 +11,33 @@ function Contact() {
       <h1>SAY HI</h1>
     </div>
     <div className="contact-right">
-      <p>Let’s make something together.</p>
+      <p>Contact Us</p>
       <p className="sub-text">
-        Fill out the form or just email me at <a href="mailto:hello@site.com">hello@site.com</a>
+        Fill out the form or just email us at <a href="mailto:info@clearear2u.co.uk">info@clearear2u.co.uk</a>
       </p>
     </div>
   </div>
 
   {/* Form Section */}
-  <div className="contact-form">
-    <div className="form-header">
-      <span className="form-step">00</span>
-      <h2>Contact</h2>
-    </div>
+  <ContactForm />
 
-    <form>
-      <div className="form-row">
-        <div className="form-group">
-          <label>NAME</label>
-          <input type="text" placeholder="Your Name" />
-        </div>
-        <div className="form-group">
-          <label>EMAIL</label>
-          <input type="email" placeholder="Email" />
-        </div>
-      </div>
-
-      <div className="form-group full-width">
-        <label>MESSAGE</label>
-        <textarea placeholder="Message"></textarea>
-      </div>
-
-      <button type="submit" className="submit-btn">SUBMIT</button>
-    </form>
-  </div>
 
   {/* Info Section */}
   <div className="contact-info">
     <div className="info-block">
       <span className="info-step">01</span>
       <h3>Email</h3>
-      <p>hello@site.com</p>
+      <p>info@clearear2u.co.uk</p>
     </div>
     <div className="info-block highlight">
       <span className="info-step">02</span>
       <h3>Phone</h3>
-      <p>800-123-4567</p>
+      <p>073 86622111</p>
     </div>
     <div className="info-block">
       <span className="info-step">03</span>
       <h3>Instagram</h3>
-      <p>@Webflow</p>
+      <p>@clearear2u</p>
     </div>
   </div>
 </div>

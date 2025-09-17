@@ -147,7 +147,7 @@ function Home() {
         Visit your local clinic
         </p>
         <p className="plan-price">
-          £60 <span className="sub">1 Ear</span>
+          £55 <span className="sub">1 Ear</span>
         </p>
         <button className="plan-button">Book Now</button>
         <div className="features">
@@ -170,7 +170,7 @@ function Home() {
           Visit your local clinic
         </p>
         <p className="plan-price">
-         £80 <span className="sub">2 Ears</span>
+         £65 <span className="sub">2 Ears</span>
         </p>
         <button className="plan-button">Book Now</button>
         <div className="features">
@@ -191,7 +191,7 @@ function Home() {
         <p className="plan-subtitle">
           Available within the North West
         </p>
-        <p className="plan-price">+£20</p>
+        <p className="plan-price">£85</p>
         <button className="plan-button">Book Now</button>
         <div className="features">
           <h4>Features</h4>

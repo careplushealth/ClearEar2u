@@ -7,17 +7,16 @@ const Footer = () => {
   <div className="footer-container">
     {/* Left Column */}
     <div className="footer-col">
-      <h2>CarePlus Homes</h2>
+      <h2>ClearEar2U</h2>
       <p>
-        Creating a stable, loving, and structured environment where children can heal,
-        grow, and build brighter futures.
+Say goodbye to blocked ears without leaving your home. Our mobile ear wax microsuction service brings safe, professional treatment right to your doorstep
       </p>
       <div className="social-icons">
-        <a href="#"><i className="fab fa-youtube"></i></a>
-        <a href="#"><i className="fab fa-linkedin"></i></a>
-        <a href="#"><i className="fab fa-x-twitter"></i></a>
-        <a href="#"><i className="fab fa-instagram"></i></a>
-        <a href="#"><i className="fab fa-facebook"></i></a>
+        <a href="youtube.com"><i className="fab fa-youtube"></i></a>
+        <a href="#linkedin.com"><i className="fab fa-linkedin"></i></a>
+        <a href="twitter.com"><i className="fab fa-x-twitter"></i></a>
+        <a href="instagram.com"><i className="fab fa-instagram"></i></a>
+        <a href="facebook.com"><i className="fab fa-facebook"></i></a>
       </div>
     </div>
 
@@ -25,9 +24,9 @@ const Footer = () => {
     <div className="footer-col">
       <h3>Quick Links</h3>
       <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Vacancies</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="contact">Contact Us</a></li>
       </ul>
     </div>
 
@@ -35,9 +34,9 @@ const Footer = () => {
     <div className="footer-col">
       <h3>Need Help?</h3>
       <p>Give us a call</p>
-      <p className="highlight">0303 2222222</p>
+      <p className="highlight">07386622111</p>
       <p>Write us an email</p>
-      <p className="highlight">info@careplushomes.co.uk</p>
+      <p className="highlight">info@clearear2u.co.uk</p>
     </div>
 
     {/* Newsletter */}
@@ -52,7 +51,7 @@ const Footer = () => {
 
   {/* Bottom Bar */}
   <div className="footer-bottom">
-    <p>© 2025 | All Rights Reserved | Provided by <a href="#">Visualab</a></p>
+    <p>© 2025 | All Rights Reserved | Provided by <a href="https://visualab.uk">Visualab</a></p>
   </div>
 </div>
 
