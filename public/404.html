@@ -5,7 +5,7 @@
     <title>Redirecting...</title>
     <script type="text/javascript">
       // Redirect all 404s to index.html but preserve the path
-      var redirectTo = window.location.protocol + '//' + window.location.host + window.location.pathname.replace(/\/[^\/]*$/, '') + '/index.html';
+      var redirectTo = window.location.protocol + '//' + window.location.host + window.location.pathname.replace(/\/[^\/]*$/, '') + '/';
       window.location.replace(redirectTo + window.location.search + window.location.hash);
     </script>
   </head>
