@@ -21,7 +21,7 @@ function Home() {
 
       {/* Right Image */}
       <div className="banner-right">
-        <img src="/Ear.jpg" alt="Locksmith keys" />
+        <img src="/ear4.jpeg" alt="Locksmith keys" />
       </div>
     </section>
 
@@ -208,7 +208,7 @@ function Home() {
       </div>
     </div>
 
-
+ {/* Right Image 
 
 <div className="locksmith-hero">
   <div className="locksmith-left">
@@ -226,7 +226,7 @@ function Home() {
   </div>
 </div>
 
-
+*/}
 
 
 

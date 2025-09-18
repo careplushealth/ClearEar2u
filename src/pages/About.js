@@ -12,12 +12,12 @@ function About() {
     <p className="subheading">About ClearEar2u</p>
     <h1>Safe, Professional Earwax Removal</h1>
     <p className="description">
-we specialise in gentle and effective earwax removal using microsuction, the gold-standard method recommended by hearing care professionals. With both mobile home visits and in-clinic appointments across Manchester, Southport, and Liverpool, we make ear care simple, safe, and accessible for everyone.    </p>
+We specialise in gentle and effective earwax removal using microsuction, the gold-standard method recommended by hearing care professionals. With both mobile home visits and in-clinic appointments across Manchester, Southport, and Liverpool, we make ear care simple, safe, and accessible for everyone.    </p>
     <button className="cta-btn">Book Your Appointment</button>
   </div>
 
   <div className="landing-image">
-    <img src="ear2.jpg" alt="Landing Page Builder Preview" />
+    <img src="ear5.jpg" alt="Landing Page Builder Preview" />
   </div>
 </div>
 
