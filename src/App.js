@@ -8,6 +8,7 @@ import Pricing from "./pages/Pricing";
 import About from "./pages/About";
 import Footer from "./Footer";
 import Contact from "./pages/Contact";
+import BookingWidget from "./Bookingwidget";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/booking" element={<BookingWidget />} />
         </Routes>
       </div>
       <Footer />

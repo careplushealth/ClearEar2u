@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import "./Header.css";
 
+
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -30,9 +31,12 @@ function Header() {
         </nav>
 
         {/* Appointment button (desktop only) */}
-        <div className="appointment-btn desktop-btn">
-          <button>📅 Book an Appointment</button>
-        </div>
+       <div className="appointment-btn desktop-btn">
+  <Link to="/booking">
+    <button>📅 Book an Appointment</button>
+  </Link>
+</div>
+
 
         {/* Hamburger icon */}
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>

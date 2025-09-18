@@ -1,6 +1,8 @@
 import React from "react";
 import "./Home.css";
 import { FaShieldAlt, FaUserMd, FaRegCalendarAlt, FaPercent, FaCreditCard } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 
 function Home() {
@@ -16,7 +18,9 @@ function Home() {
         <p>
           Say goodbye to blocked ears without leaving your home. Our mobile ear wax microsuction service brings safe, professional treatment right to your doorstep
         </p>
-        <button className="call-btn">More Information</button>
+       <Link to="/about">
+  <button className="call-btn">More Information</button>
+</Link>
       </div>
 
       {/* Right Image */}
@@ -127,7 +131,9 @@ function Home() {
         <p className="plan-price">
           £80 <span className="sub">Children Under 12</span>
         </p>
-        <button className="plan-button">Book Now</button>
+<Link to="/booking">
+  <button className="plan-button">Book Now</button>
+</Link>
         <div className="features">
           <h4>Key Features</h4>
           <ul>
@@ -149,7 +155,9 @@ function Home() {
         <p className="plan-price">
           £55 <span className="sub">1 Ear</span>
         </p>
-        <button className="plan-button">Book Now</button>
+       <Link to="/booking">
+  <button className="plan-button">Book Now</button>
+</Link>
         <div className="features">
           <h4>Features</h4>
           <ul>
@@ -172,7 +180,9 @@ function Home() {
         <p className="plan-price">
          £65 <span className="sub">2 Ears</span>
         </p>
-        <button className="plan-button">Book Now</button>
+        <Link to="/booking">
+          <button className="plan-button">Book Now</button>
+        </Link>
         <div className="features">
           <h4>Features</h4>
           <ul>
@@ -192,7 +202,9 @@ function Home() {
           Available within the North West
         </p>
         <p className="plan-price">£85</p>
-        <button className="plan-button">Book Now</button>
+        <Link to="/booking">
+          <button className="plan-button">Book Now</button>
+        </Link>
         <div className="features">
           <h4>Features</h4>
           <ul>
