@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "./Header.css";
 
 function Header() {
@@ -9,7 +10,6 @@ function Header() {
     <header>
       <div className="top-bar">
         <span>Top-rated mobile ear care service in North West England</span>
-        
       </div>
 
       <div className="main-header">
@@ -22,10 +22,9 @@ function Header() {
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
-           <li>
-  <a href="/#pricing">Pricing</a>
-</li>
-            
+            <li>
+              <HashLink smooth to="/#pricing">Pricing</HashLink>
+            </li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
@@ -49,7 +48,11 @@ function Header() {
         <ul>
           <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
           <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
-          <li><a href="/#pricing" onClick={() => setMenuOpen(false)}>Pricing</a></li>
+          <li>
+            <HashLink smooth to="/#pricing" onClick={() => setMenuOpen(false)}>
+              Pricing
+            </HashLink>
+          </li>
           <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
         </ul>
         <div className="appointment-btn">

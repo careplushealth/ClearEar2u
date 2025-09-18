@@ -7,25 +7,21 @@ import Home from "./pages/Home";
 import Pricing from "./pages/Pricing";
 import About from "./pages/About";
 import Footer from "./Footer";
-
-
 import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <div className="page-container">
         <Routes>
           <Route path="/" element={<Home />} />
-          
-          <Route path="/pricing" element={<Pricing />} />
+          <Route path="#pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
-          
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }
