@@ -60,7 +60,9 @@ function Header() {
           <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
         </ul>
         <div className="appointment-btn">
-          <button>📅 Book an Appointment</button>
+           <Link to="/booking">
+    <button>📅 Book an Appointment</button>
+  </Link>
         </div>
       </div>
 
