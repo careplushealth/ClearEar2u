@@ -8,7 +8,6 @@ import Pricing from "./pages/Pricing";
 import About from "./pages/About";
 import Footer from "./Footer";
 import Contact from "./pages/Contact";
-import BookingWidget from "./Bookingwidget";
 import MultiStepForm from "./pages/MultiStepForm";
 
 function App() {
@@ -21,8 +20,7 @@ function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/booking" element={<BookingWidget />} />
-          <Route path="/form" element={<MultiStepForm />} />
+          <Route path="/booking" element={<MultiStepForm />} />
         </Routes>
       </div>
       <Footer />

@@ -131,7 +131,7 @@ function Home() {
         <p className="plan-price">
           £80 <span className="sub">Children Under 12</span>
         </p>
-<Link to="/form">
+<Link to="/booking">
   <button className="plan-button">Book Now</button>
 </Link>
         <div className="features">
@@ -155,7 +155,7 @@ function Home() {
         <p className="plan-price">
           £55 <span className="sub">1 Ear</span>
         </p>
-       <Link to="/form">
+       <Link to="/booking">
   <button className="plan-button">Book Now</button>
 </Link>
         <div className="features">
@@ -180,7 +180,7 @@ function Home() {
         <p className="plan-price">
          £65 <span className="sub">2 Ears</span>
         </p>
-        <Link to="/form">
+        <Link to="/booking">
           <button className="plan-button">Book Now</button>
         </Link>
         <div className="features">
@@ -202,7 +202,7 @@ function Home() {
           Available within the North West
         </p>
         <p className="plan-price">£85</p>
-        <Link to="/form">
+        <Link to="/booking">
           <button className="plan-button">Book Now</button>
         </Link>
         <div className="features">

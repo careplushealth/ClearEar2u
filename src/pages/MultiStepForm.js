@@ -3,6 +3,7 @@ import UserDetails from "./UserDetails";
 import ContactDetails from "./ContactDetails";
 import LocationStep from "./LocationStep";
 import ServiceStep from "./ServiceStep";
+import BookingWidget from "../Bookingwidget";
 
 const MultiStepForm = () => {
   const [step, setStep] = useState(1);
@@ -39,7 +40,7 @@ const MultiStepForm = () => {
     const finalData = { ...formData, ...data };
 
     const payload = {
-      access_key: "affbe556-d2d8-4235-a568-cbb14d4ce7f0", // ✅ your Web3Forms key
+      access_key: "affbe556-d2d8-4235-a568-cbb14d4ce7f0",
       subject: "New ClearEar2u Form Submission",
       from_name: "ClearEar2u Website",
       botcheck: "",
@@ -80,10 +81,12 @@ const MultiStepForm = () => {
     const ok = await sendToEmail(payload);
 
     if (ok) {
-      alert("✅ Form submitted! We’ve received your details.");
-      window.location.href = "/booking"; // redirect to your booking page
+      // go to booking step
+      setStep(5);
     } else {
-      alert("❌ Something went wrong sending your details. Please try again.");
+      // fallback: still go to booking step, but log error
+      console.error("❌ Something went wrong sending your details.");
+      setStep(5);
     }
   };
 
@@ -93,6 +96,7 @@ const MultiStepForm = () => {
       {step === 2 && <ContactDetails onNext={handleNext} onBack={handleBack} />}
       {step === 3 && <LocationStep onNext={handleNext} onBack={handleBack} />}
       {step === 4 && <ServiceStep onNext={handleFinish} onBack={handleBack} />}
+      {step === 5 && <BookingWidget />}
     </div>
   );
 };
