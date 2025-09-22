@@ -32,7 +32,7 @@ function Header() {
 
         {/* Appointment button (desktop only) */}
        <div className="appointment-btn desktop-btn">
-  <Link to="/booking">
+  <Link to="/form">
     <button>📅 Book an Appointment</button>
   </Link>
 </div>
@@ -60,7 +60,7 @@ function Header() {
           <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
         </ul>
         <div className="appointment-btn">
-           <Link to="/booking">
+           <Link to="/form">
     <button>📅 Book an Appointment</button>
   </Link>
         </div>

@@ -1,0 +1,135 @@
+.form-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Raleway', sans-serif;
+  text-align: center; /* center by default */
+}
+
+/* Step bar at the very top */
+.step-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #e66a00;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+/* Step text */
+.step {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.step span {
+  font-weight: normal;
+  color: #555;
+}
+
+/* Heading */
+.form-header h2 {
+  margin-top: 0.5rem;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  text-align: center; /* ensure center alignment */
+}
+
+/* Form elements */
+.details-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left; /* keep labels/inputs left aligned */
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #e66a00;
+}
+
+small {
+  font-size: 12px;
+  color: #777;
+}
+
+.dob-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dob-group input {
+  flex: 1;
+  text-align: center;
+}
+
+.sex-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.sex-buttons button {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  background: #f9f9f9;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.sex-buttons button.active {
+  border-color: #e66a00;
+  background: #fff4eb;
+  font-weight: 600;
+}
+
+.continue-btn {
+  margin-top: 1rem;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  background: #e66a00;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.continue-btn:disabled {
+  background: #eee;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 1rem;
+  }
+
+  .dob-group {
+    flex-direction: column;
+  }
+
+  .sex-buttons {
+    flex-direction: column;
+  }
+}

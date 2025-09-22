@@ -1,0 +1,183 @@
+.form-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Raleway', sans-serif;
+  text-align: center; /* center by default for step/heading */
+}
+
+/* Step bar */
+.step-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #e66a00;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+/* Step text */
+.step {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.step span {
+  font-weight: normal;
+  color: #555;
+}
+
+.form-header {
+  margin-bottom: 1.5rem;
+}
+
+/* Heading fix */
+.form-header h2 {
+  margin-top: 0.5rem;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.4;
+  display: block;
+  width: 100%;
+  text-align: center !important; /* ⬅️ force center */
+}
+
+/* Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left; /* keep labels/inputs left aligned */
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+input,
+select {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  border-color: #e66a00;
+}
+
+/* Checkbox */
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.checkbox input {
+  margin-top: 3px;
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Buttons */
+.continue-btn {
+  margin-top: 1rem;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  background: #e66a00;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s ease;
+}
+
+.continue-btn:disabled {
+  background: #eee;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Footer */
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.terms {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.terms a {
+  color: #009688;
+  text-decoration: underline;
+}
+
+.back-btn {
+  margin-top: 1rem;
+  background: none;
+  border: none;
+  color: #009688;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 0.8rem;
+    margin: 1rem;
+  }
+
+  .form-header h2 {
+    font-size: 18px;
+  }
+
+  .continue-btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+
+/* 📲 Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+  .form-container {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .form-header h2 {
+    font-size: 19px;
+  }
+}
+
+/* 💻 Desktop */
+@media (min-width: 1200px) {
+  .form-container {
+    max-width: 600px;
+  }
+
+  .contact-form {
+    gap: 1.2rem;
+  }
+}
