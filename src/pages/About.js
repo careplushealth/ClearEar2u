@@ -2,6 +2,8 @@ import React from "react";
 import "./About.css";
 import Faq from "./FAQ";
 import ClinicLocator from "./ClinicLocator";
+import { Link } from "react-router-dom";
+
 
 function About() {
   return (
@@ -13,7 +15,9 @@ function About() {
     <h1>Safe, Professional Earwax Removal</h1>
     <p className="description">
 We specialise in gentle and effective earwax removal using microsuction, the gold-standard method recommended by hearing care professionals. With both mobile home visits and in-clinic appointments across Manchester, Southport, and Liverpool, we make ear care simple, safe, and accessible for everyone.    </p>
-    <button className="cta-btn">Book Your Appointment</button>
+    <Link to="/booking" className="cta-btn">
+  Book Your Appointment
+</Link>
   </div>
 
   <div className="landing-image">
