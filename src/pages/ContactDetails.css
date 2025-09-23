@@ -81,20 +81,28 @@ select:focus {
 
 /* Checkbox */
 .checkbox {
-  display: flex;
-  align-items: flex-start;
+  display: flex !important;
+  flex-direction: row !important;  /* ✅ keep inline */
+  align-items: center;             /* ✅ vertical align */
   font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
 }
 
+/* Make checkbox look aligned */
 .checkbox input {
-  margin-top: 3px;
   margin-right: 8px;
   width: 18px;
   height: 18px;
   flex-shrink: 0;
 }
+
+/* Text wraps nicely under first word */
+.checkbox span {
+  display: inline-block;
+  font-weight: 600;  /* bold like your screenshot */
+}
+
 
 /* Buttons */
 .continue-btn {

@@ -25,10 +25,7 @@ const ContactDetails = ({ onNext, onBack }) => {
       alert("Please enter a valid UK phone number (07... or +44...).");
       return;
     }
-    if (!formData.agreed) {
-      alert("You must agree before continuing.");
-      return;
-    }
+    // ❌ Removed the check that forced 'agreed'
     onNext(formData);
   };
 
@@ -42,10 +39,7 @@ const ContactDetails = ({ onNext, onBack }) => {
 
       {/* Centered heading */}
       <div className="form-header">
-        <h2>
-         
-          Please add your email and phone number
-        </h2>
+        <h2>Please add your email and phone number</h2>
       </div>
 
       {/* Contact Form */}
@@ -74,8 +68,7 @@ const ContactDetails = ({ onNext, onBack }) => {
           />
         </label>
 
-       
-
+        {/* Checkbox (not required anymore) */}
         <label className="checkbox">
           <input
             type="checkbox"
@@ -84,25 +77,19 @@ const ContactDetails = ({ onNext, onBack }) => {
             onChange={handleChange}
           />
           <span>
-            I agree to nominate CarePlus as my nominated pharmacy to deliver
-            my medication
+            I agree to nominate CarePlus as my nominated pharmacy to deliver my
+            medication
           </span>
         </label>
 
         <button
           type="submit"
           className="continue-btn"
-          disabled={
-            !formData.email ||
-            !formData.phone ||
-            !formData.agreed
-          }
+          disabled={!formData.email || !formData.phone} // ✅ no agreed check
         >
-          Agree & Continue
+          Continue
         </button>
       </form>
-
-    
     </div>
   );
 };

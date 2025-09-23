@@ -20,7 +20,7 @@ const ServiceStep = ({ onNext, onBack }) => {
   </div>
 
       <form className="option-form" onSubmit={handleSubmit}>
-        {["Clinic Visit – Children (£80)", "Clinic Visit – One Ear (£55)", "Clinic Visit – Both Ears(£65)", "Home Visit (£80)"].map((svc) => (
+        {["Clinic Visit – Children (£80)", "Clinic Visit – One Ear (£55)", "Clinic Visit – Both Ears(£65)", "Home Visit (£85)"].map((svc) => (
           <button
             type="button"
             key={svc}

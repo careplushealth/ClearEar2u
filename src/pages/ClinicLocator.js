@@ -68,7 +68,7 @@ const fallbackClinics = [
     lat: 53.433647,
     lng: -2.228699,
     directionsUrl: "https://maps.app.goo.gl/4x3P8bYT6qPNkMos5",
-    bookingUrl: "https://yourearsite.com/book/manchester",
+    bookingUrl: "/booking",
   },
   {
     id: "CPC",
@@ -77,7 +77,7 @@ const fallbackClinics = [
     lat: 53.640781,
     lng: -3.002837,
     directionsUrl: "https://maps.app.goo.gl/UTp9d22DF3N4F2DB7",
-    bookingUrl: "https://yourearsite.com/book/southport",
+    bookingUrl: "/booking",
   },
   {
     id: "247",
@@ -86,7 +86,7 @@ const fallbackClinics = [
     lat: 53.48051,
     lng: -3.018777,
     directionsUrl: "https://maps.app.goo.gl/isWQJzsLYNbvYMyw9",
-    bookingUrl: "https://yourearsite.com/book/liverpool",
+    bookingUrl: "/booking",
   },
 ];
 
