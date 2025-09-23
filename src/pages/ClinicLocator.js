@@ -9,6 +9,8 @@ import {
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "./clinic-locator.css";
+import { Link } from "react-router-dom";
+
 
 // --- Fix default marker icons path when bundlers don't copy images automatically
 // (common with CRA / Vite). You can remove if your setup already handles this.
@@ -68,7 +70,7 @@ const fallbackClinics = [
     lat: 53.433647,
     lng: -2.228699,
     directionsUrl: "https://maps.app.goo.gl/4x3P8bYT6qPNkMos5",
-    bookingUrl: "https://clearear2u.co.uk/booking",
+    bookingUrl: "/booking",
   },
   {
     id: "CPC",
@@ -77,7 +79,7 @@ const fallbackClinics = [
     lat: 53.640781,
     lng: -3.002837,
     directionsUrl: "https://maps.app.goo.gl/UTp9d22DF3N4F2DB7",
-    bookingUrl: "https://clearear2u.co.uk/booking",
+    bookingUrl: "/booking",
   },
   {
     id: "247",
@@ -86,7 +88,7 @@ const fallbackClinics = [
     lat: 53.48051,
     lng: -3.018777,
     directionsUrl: "https://maps.app.goo.gl/isWQJzsLYNbvYMyw9",
-    bookingUrl: "https://clearear2u.co.uk/booking",
+    bookingUrl: "/booking",
   },
 ];
 
@@ -203,15 +205,13 @@ export default function ClinicLocator({ clinics = fallbackClinics }) {
                   >
                     Directions
                   </a>
-                  <a
-                    className="btn btn--primary"
-                    href={c.bookingUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    Book Appointment
-                  </a>
+                  <Link
+    className="btn btn--primary"
+    to={c.bookingUrl}
+    onClick={(e) => e.stopPropagation()}
+  >
+    Book Appointment
+  </Link>
                 </div>
               </li>
             ))}
