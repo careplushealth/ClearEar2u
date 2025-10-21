@@ -11,7 +11,7 @@ function About() {
 
  <div className="landing-section">
   <div className="landing-text">
-    <p className="subheading">About ClearEar2u</p>
+    <p className="subheading">About ClearEar2U</p>
     <h1>Safe, Professional Earwax Removal</h1>
     <p className="description">
 We specialise in gentle and effective earwax removal using microsuction, the gold-standard method recommended by hearing care professionals. With both mobile home visits and in-clinic appointments across Manchester, Southport, and Liverpool, we make ear care simple, safe, and accessible for everyone.    </p>
@@ -34,7 +34,7 @@ We specialise in gentle and effective earwax removal using microsuction, the gol
 
   <div className="gourmet-description">
     <p>
-      We believe ear health should be convenient. That’s why ClearEar2u offers mobile earwax removal in the comfort of your home, as well as clinics in Manchester, Southport, and Liverpool. Our fully trained specialists use advanced microsuction technology to deliver safe, fast, and comfortable treatments.
+      We believe ear health should be convenient. That’s why ClearEar2U offers mobile earwax removal in the comfort of your home, as well as clinics in Manchester, Southport, and Liverpool. Our fully trained specialists use advanced microsuction technology to deliver safe, fast, and comfortable treatments.
     </p>
   </div>
 
