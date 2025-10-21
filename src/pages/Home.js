@@ -40,7 +40,7 @@ function Home() {
   </div>
   <div className="rich-text-right">
     <p>
-     We believe ear health should be convenient. That’s why ClearEar2u offers mobile earwax removal in the comfort of your home, as well as clinics in Manchester, Southport, and Liverpool. Our fully trained specialists use advanced microsuction technology to deliver safe, fast, and comfortable treatments.
+     We believe ear health should be convenient. That’s why ClearEar2U offers mobile earwax removal in the comfort of your home, as well as clinics in Manchester, Southport, and Liverpool. Our fully trained specialists use advanced microsuction technology to deliver safe, fast, and comfortable treatments.
     </p>
   </div>
 </div>

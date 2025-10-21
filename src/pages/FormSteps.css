@@ -161,3 +161,33 @@
 .home-visit-fields input:focus {
   border-color: #e66a00;
 }
+.checkbox-section {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.checkbox-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  column-gap: 0.5rem;  /* adjust space between checkbox and text */
+  text-align: left;
+  max-width: 720px;
+  line-height: 1.5;
+}
+
+.checkbox-item input[type="checkbox"] {
+  margin-top: 0.25rem;   /* aligns box vertically with first line */
+  width: 18px;
+  height: 18px;
+  accent-color: #008080;
+}
+
+.checkbox-item span {
+  display: block;
+  margin: 0;             /* removes any text indent or spacing */
+  padding: 0;
+}
+

@@ -63,6 +63,16 @@ const MultiStepForm = () => {
       service: finalData.service || "",
       consent_nominated_pharmacy: finalData.agreed ? "Yes" : "No",
 
+      // ✅ --- Checkbox Data ---
+      used_olive_oil:
+        finalData.usedOliveOil === true
+          ? "Yes – Used olive oil for 3+ days"
+          : "No / Not confirmed",
+      deliver_olive_oil:
+        finalData.deliverOliveOil === true
+          ? "Yes – Wants olive oil delivery"
+          : "No",
+
       // --- Include Home Visit address if applicable ---
       ...(finalData.location === "Home Visit" && finalData.address
         ? {
@@ -81,10 +91,8 @@ const MultiStepForm = () => {
     const ok = await sendToEmail(payload);
 
     if (ok) {
-      // go to booking step
       setStep(5);
     } else {
-      // fallback: still go to booking step, but log error
       console.error("❌ Something went wrong sending your details.");
       setStep(5);
     }

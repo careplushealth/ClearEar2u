@@ -32,7 +32,7 @@ function Contact() {
     <div className="info-block highlight">
       <span className="info-step">02</span>
       <h3>Phone</h3>
-      <p>073 86622111</p>
+      <p>078 36302702</p>
     </div>
     <div className="info-block">
       <span className="info-step">03</span>
