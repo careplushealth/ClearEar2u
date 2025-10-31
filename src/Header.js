@@ -9,9 +9,11 @@ function Header() {
 
   return (
     <header>
-      <div className="top-bar">
-        <span>Top-rated mobile ear care service in North West England</span>
-      </div>
+    <div className="top-bar">
+  <span>Top-rated mobile ear care service in North West England</span>
+  <span>Part of the CarePlusHealth Group</span>
+</div>
+
 
       <div className="main-header">
         <div className="logo">

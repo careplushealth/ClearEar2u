@@ -164,7 +164,7 @@
 
 .clinic-locator__map-el {
   width: 100%;
-  height: 520px;
+  height: 620px;
 }
 
 /* Active marker subtle scale */
@@ -210,4 +210,16 @@
   .clinic-locator__grid { grid-template-columns: 1fr; }
   .clinic-locator__map-el { height: 360px; }
   .clinic-locator__cards { max-height: none; }
+}
+
+
+.clinic-card--home {
+  background: #fffdf7;
+  border: 1px dashed #f0c36a;
+  cursor: pointer;
+}
+.clinic-card--home .btn--primary {
+  background: #7ac143;
+  border-color: #7ac143;
+  color: #fff;
 }

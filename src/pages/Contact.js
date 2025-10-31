@@ -8,7 +8,7 @@ function Contact() {
   {/* Top Section */}
   <div className="contact-header">
     <div className="contact-left">
-      <h1>SAY HI</h1>
+      <h1>Have a Question?</h1>
     </div>
     <div className="contact-right">
       <p>Contact Us</p>
@@ -23,23 +23,33 @@ function Contact() {
 
 
   {/* Info Section */}
-  <div className="contact-info">
-    <div className="info-block">
-      <span className="info-step">01</span>
-      <h3>Email</h3>
-      <p>info@clearear2u.co.uk</p>
+<div className="contact-info">
+  <div className="info-block">
+    <div className="info-icon">
+      <img src="email.png" alt="Email Icon" />
     </div>
-    <div className="info-block highlight">
-      <span className="info-step">02</span>
-      <h3>Phone</h3>
-      <p>078 36302702</p>
-    </div>
-    <div className="info-block">
-      <span className="info-step">03</span>
-      <h3>Instagram</h3>
-      <p>@clearear2u</p>
-    </div>
+    <h3>Email</h3>
+    <p>info@clearear2u.co.uk</p>
   </div>
+
+  <div className="info-block highlight">
+    <div className="info-icon">
+      <img src="phone.png" alt="Phone Icon" />
+    </div>
+    <h3>Phone</h3>
+    <p>078 36302702</p>
+  </div>
+
+  <div className="info-block">
+    <div className="info-icon">
+      <img src="instagram.png" alt="Instagram Icon" />
+    </div>
+    <h3>Instagram</h3>
+    <p>@clearear2u</p>
+  </div>
+</div>
+
+
 </div>
 
   );

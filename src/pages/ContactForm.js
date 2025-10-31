@@ -50,7 +50,7 @@ export default function ContactForm() {
   return (
     <div className="contact-form">
       <div className="form-header">
-        <span className="form-step">00</span>
+        <span className="form-step"></span>
         <h2>Contact</h2>
       </div>
 

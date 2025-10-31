@@ -94,7 +94,7 @@ function Home() {
 
   <div className="specializations-section">
       <div className="specializations-header">
-        <h2>What we Specialize In</h2>
+        <h2>What we Specialise In</h2>
       </div>
       <div className="specializations-grid">
         <div className="specialization-card">
@@ -125,9 +125,9 @@ function Home() {
 </div>
  <div className="pricing-container">
   
-      <div className="pricing-card">
+{/*      <div className="pricing-card">
         <h2 className="plan-title">Clinic Visit – Children</h2>
-        <p className="plan-subtitle">Visit your local clinic</p>
+    <p className="plan-subtitle">Visit your local clinic</p>  
         <p className="plan-price">
           £80 <span className="sub">Children Under 12</span>
         </p>
@@ -147,11 +147,13 @@ function Home() {
         </div>
       </div>
 
+      */} 
+
       <div className="pricing-card">
         <h2 className="plan-title">Clinic Visit – One Ear</h2>
-        <p className="plan-subtitle">
+   {/*     <p className="plan-subtitle">
         Visit your local clinic
-        </p>
+        </p>*/} 
         <p className="plan-price">
           £55 <span className="sub">1 Ear</span>
         </p>
@@ -174,9 +176,9 @@ function Home() {
       <div className="pricing-card highlighted">
         <div className="badge">MOST POPULAR</div>
         <h2 className="plan-title">Clinic Visit – Both Ears</h2>
-        <p className="plan-subtitle">
-          Visit your local clinic
-        </p>
+         {/*     <p className="plan-subtitle">
+        Visit your local clinic
+        </p>*/} 
         <p className="plan-price">
          £65 <span className="sub">2 Ears</span>
         </p>
@@ -215,6 +217,7 @@ function Home() {
             </li>
             <li>✓ Consultation with our experienced team </li>
             <li>✓ Within the comfort of your own home!</li>
+             <li>⚠️ We offer free travel within certain miles. A small mileage fee applies for visits beyond this area.</li> 
           </ul>
         </div>
       </div>

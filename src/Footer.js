@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="footer-col">
       <h2>ClearEar2U</h2>
       <p>
-Say goodbye to blocked ears without leaving your home. Our mobile ear wax microsuction service brings safe, professional treatment right to your doorstep
+      Say goodbye to blocked ears without leaving your home. Our mobile ear wax microsuction service brings safe, professional treatment right to your doorstep
       </p>
       <div className="social-icons">
         <a href="youtube.com"><i className="fab fa-youtube"></i></a>
@@ -34,9 +34,9 @@ Say goodbye to blocked ears without leaving your home. Our mobile ear wax micros
     <div className="footer-col">
       <h3>Need Help?</h3>
       <p>Give us a call</p>
-      <p className="highlight">07386622111</p>
+      <p className="highlight">07352326747</p>
       <p>Write us an email</p>
-      <p className="highlight">info@clearear2u.co.uk</p>
+      <p className="highlight">info@clearEar2U.co.uk</p>
     </div>
 
     {/* Newsletter */}
